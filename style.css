@@ -18,3 +18,36 @@
 }
 
 /* Add your styles below here*/
+.container {
+  border: 5px solid gray;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr ;
+  grid-auto-rows: 250px;
+  gap: 0.5rem 0.5rem;
+  background-color: rgb(18, 49, 107);
+}
+.container > div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #eee;
+}
+.bg1 *, .bg2  * {
+  background-color:rgb(159, 170, 166, 0.5);
+  padding: 5px;
+  margin: 5px;
+  border-radius: 15px;
+}
+
+.container *:hover {
+  box-shadow: 2px 2px 5px greenyellow, 2px 2px 5px white inset;
+  font-size: 2rem;
+  color: red;
+  background-color: blue;
+  text-align: center;
+}
+.container *:active {
+  box-shadow: 5px 5px 5px rgb(255, 0, 0, 0.5);
+}
